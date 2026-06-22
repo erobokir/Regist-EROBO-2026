@@ -4,12 +4,13 @@
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Pendaftaran Ekskul EROBO</title>
+  <link rel="icon" type="image/png" href="./favicon.png"/>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Orbitron:wght@700;900&display=swap" rel="stylesheet"/>
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     :root {
-      --navy:        #0f2044;
+      --navy:        #3a1de2;
       --navy-mid:    #1a3260;
       --navy-light:  #243d73;
       --purple:      #6d28d9;
@@ -26,11 +27,16 @@
 
     html, body { height: 100%; }
     body {
-      font-family: 'Inter', sans-serif;
-      min-height: 100vh;
-      overflow-x: hidden;
-      background: linear-gradient(135deg, var(--navy) 0%, #1e1260 55%, #3b0764 100%);
-    }
+  font-family: 'Inter', sans-serif;
+  min-height: 100vh;
+  overflow-x: hidden;
+  /* Mengarah ke file gambar lokal di folder assets */
+  background-image: url('./background.png'); 
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
 
     /* ── canvas ── */
     #particle-canvas {
